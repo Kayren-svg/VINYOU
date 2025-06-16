@@ -46,7 +46,7 @@ st.title("🍷 VINYOU – Wine Quiz")
 name = st.text_input("Your name:")
 gender = st.radio("Gender:", ["Female", "Male", "Other"])
 selected_prefs = st.multiselect("Taste preferences:", preferences)
-wine_type = st.radio("Preferred wine type:", ["Red", "White", "Rosé", "White Sweet", "Any"])
+wine_type = st.radio("Preferred wine type:", ["Red", "White", "Rosé", "Sweet", "Any"])
 
 def match_score(wine_profiles, user_prefs):
     return sum(p in user_prefs for p in wine_profiles)
