@@ -23,9 +23,21 @@ def save_to_google_sheets(entry):
 
 # Interface Streamlit simplifiée
 wines = [
-    {"name": "Château Margaux", "type": "Red", "profile": ["tannic", "full-bodied", "complex"], "region": "Bordeaux"},
-    {"name": "Meursault", "type": "White", "profile": ["buttery", "nutty", "round"], "region": "Bourgogne"},
-    {"name": "Château d'Yquem", "type": "White Sweet", "profile": ["sweet", "rich", "honeyed"], "region": "Sauternes"}
+    {"name": "Chablis 1er Cru Montée de Tonnerre 2020", "type": "White", "profile": ["dry", "fruity", "complex"], "region": "Bourgogne"},
+    {"name": "Château La Nerthe 2018", "type": "Red", "profile": ["tannic", "complex", "dry"], "region": "Châteauneuf-du-Pape"},
+    {"name": "Domaine Zind-Humbrecht Riesling 2019", "type": "White", "profile": ["fruity", "dry", "complex"], "region": "Alsace"},
+    {"name": "Bandol Domaine Tempier 2020", "type": "Rosé", "profile": ["fruity", "dry", "complex"], "region": "Provence"},
+    {"name": "Château Haut-Bailly 2016", "type": "Red", "profile": ["tannic", "complex", "dry"], "region": "Pessac-Léognan"},
+    {"name": "Pouilly-Fumé Didier Dagueneau 2021", "type": "White", "profile": ["dry", "fruity"], "region": "Loire"},
+    {"name": "Côte-Rôtie La Turque 2017", "type": "Red", "profile": ["tannic", "complex", "dry"], "region": "Rhône"},
+    {"name": "Mâcon-Villages Joseph Drouhin 2022", "type": "White", "profile": ["fruity", "dry"], "region": "Bourgogne"},
+    {"name": "Clos de Tart Grand Cru 2015", "type": "Red", "profile": ["tannic", "complex"], "region": "Bourgogne"},
+    {"name": "Gewurztraminer Vendanges Tardives 2018", "type": "White", "profile": ["sweet", "fruity", "complex"], "region": "Alsace"},
+    {"name": "Tavel Domaine de la Mordorée 2021", "type": "Rosé", "profile": ["fruity", "dry"], "region": "Rhône"},
+    {"name": "Château d’Yquem 2005", "type": "White Sweet", "profile": ["sweet", "complex"], "region": "Sauternes"},
+    {"name": "Chinon Les Picasses 2020", "type": "Red", "profile": ["tannic", "dry", "fruity"], "region": "Loire"},
+    {"name": "Picpoul de Pinet 2022", "type": "White", "profile": ["dry", "fruity"], "region": "Languedoc"},
+    {"name": "Cornas Vieilles Vignes 2017", "type": "Red", "profile": ["tannic", "complex", "dry"], "region": "Rhône"}
 ]
 wines_df = pd.DataFrame(wines)
 preferences = ["fruity", "dry", "tannic", "sweet", "complex"]
